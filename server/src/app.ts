@@ -2,7 +2,7 @@ import express from "express";
 import router from './api'
 import cors from 'cors'
 
-const PORT = 3030 as number
+const PORT = process.env.PORT || 3030 as number
 const app = express()
 
 app.use(cors())

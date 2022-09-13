@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start": "tsc && node dist/app.js"
   },
   "keywords": [],
   "author": "Gosmac",
