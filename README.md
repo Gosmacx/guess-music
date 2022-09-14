@@ -3,7 +3,7 @@
 Music prediction app that generates random quizzes using Spotify lists 🔥.
 
 ## Used Technologies 👨‍💻
-`Typescript`, `React`, `Express` 
+`Typescript`, `React`, `Express`, `Spotify API`
 
 ## App Video
 
