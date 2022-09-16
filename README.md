@@ -1,5 +1,7 @@
 # guess-music 🎶
 
+**Live:** [Website](https://guessmusic.netlify.app/)
+
 Music prediction app that generates random quizzes using Spotify lists 🔥.
 
 ## Used Technologies 👨‍💻
