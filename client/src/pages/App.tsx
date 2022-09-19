@@ -8,7 +8,7 @@ import { questionType } from '../models/index'
 
 function App() {
 
-  const [username, setUsername] = useState<string | null>(null)
+  const [game, setGame] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(false)
   const [listenedSongs, setListened] = useState<string[]>([])
   const [question, setQuestion] = useState<questionType | null>(null)
@@ -33,10 +33,9 @@ function App() {
       });
   }
 
-  const startGame = (e: string) => {
-    if (!e || !e.length) return;
+  const startGame = (e: boolean) => {
     setLoading(true)
-    setUsername(e);
+    setGame(e);
     getQuestion()
   }
 
@@ -55,7 +54,7 @@ function App() {
 
   const resetGame = (status: 'win' | 'lose') => {
     setLoading(false)
-    setUsername(null)
+    setGame(false)
     setQuestion(null)
     setListened([])
     setRound(0)
@@ -75,7 +74,7 @@ function App() {
       {/* Game Start Screen */}
       {loading ?
         <div className='w-14 h-14 animate-spin rounded-full border-t-2 border-amber-500 ' ></div> :
-        <Start username={username} startGame={startGame} />
+        <Start game={game} startGame={startGame} />
       }
 
       {/* Game Screen */}
@@ -90,7 +89,7 @@ function App() {
       }
 
       {/* Last Players Table */}
-      <Table username={username} setType={setType} music={music} />
+      <Table game={game} setType={setType} music={music} />
 
       {/* Alert Box */}
       <Alert 

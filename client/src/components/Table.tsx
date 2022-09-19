@@ -1,14 +1,14 @@
 import { Dispatch, SetStateAction, useEffect } from 'react'
 
 type Table = { 
-    username: string | null, 
+    game: boolean, 
     setType: Dispatch<SetStateAction<"global" | "turkish">>, 
     music: any 
 }
 
-export default function App({ username, setType, music }: Table) {
+export default function App({ game, setType, music }: Table) {
 
-    if (username) return <></>
+    if (game) return <></>
     return (
         <section className='h-3/4 w-96 border-2 border-gray-300 text-white md:absolute left-10 flex items-center flex-col rounded-sm rounded-tl-none shadow ' >
             <h1 className='text-lg font-semibold py-2 border-b-2 border-gray-300 w-full text-center ' >Info</h1>
