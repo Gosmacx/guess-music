@@ -24,9 +24,12 @@ function App() {
       listenedSongs
     })
       .then(response => {
-        setQuestion(response.data)
-        setLoading(false)
-        setListened(e => [...e, response.data.key])
+        music.src = response.data.song
+        music.oncanplay = () => {
+          setQuestion(response.data)
+          setLoading(false)
+          setListened(e => [...e, response.data.key])
+        }
       })
       .catch(() => {
         resetGame('lose')

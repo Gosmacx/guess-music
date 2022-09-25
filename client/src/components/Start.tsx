@@ -1,16 +1,9 @@
-import { useState } from "react"
-
 type Start = { 
     game: boolean, 
     startGame: (e: boolean) => void 
 }
 
 export default function App({ game, startGame }: Start) {
-
-    const enterCapture = (event: any) => {
-        if (event.key == 'Enter') return startGame(true)
-    }
-
     if (game) return <></>
     return (
         <section className='text-white self-center min-h-full w-full flex items-center justify-center' >

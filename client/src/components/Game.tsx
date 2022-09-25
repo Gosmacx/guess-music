@@ -23,7 +23,7 @@ export default function App(
             return;
         }
         
-        music.src = question.song
+        // music.src = question.songs
 
         const timer = setInterval(() => {
             setCountdown(countdown - 1)
