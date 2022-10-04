@@ -69,14 +69,14 @@ function App() {
 
   return (
     <div className="w-full h-screen flex items-center justify-center flex-col md:flex-row bg-fixed ">
-      <div className='text-white font-semibold text-2xl absolute w-full top-3 text-center flex gap-5 items-center justify-center' >
+      <div className='text-white font-semibold text-2xl absolute drop-shadow-lg w-full top-3 text-center flex gap-5 items-center justify-center' >
         <span>G U E S S</span>
         <span>M U S I C</span>
       </div>
 
       {/* Game Start Screen */}
       {loading ?
-        <div className='w-14 h-14 animate-spin rounded-full border-t-2 border-amber-500 ' ></div> :
+        <div className='w-14 h-14 animate-spin rounded-full border-t-2 border-slate-900 ' ></div> :
         <Start game={game} startGame={startGame} />
       }
 

@@ -23,8 +23,6 @@ export default function App(
             return;
         }
         
-        // music.src = question.songs
-
         const timer = setInterval(() => {
             setCountdown(countdown - 1)
         }, 1000);
@@ -44,7 +42,7 @@ export default function App(
     return (
         <div className="w-full h-screen flex items-center justify-center" >
             {countdown ?
-                <span className='font-semibold text-9xl text-white ' > { countdown } </span> :
+                <span className='font-semibold text-9xl text-white drop-shadow-lg ' > { countdown } </span> :
                 <div className='flex flex-col items-cener justify-center gap-5 ' >
 
                     {
