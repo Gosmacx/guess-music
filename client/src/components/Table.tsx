@@ -10,8 +10,8 @@ export default function App({ game, setType, music }: Table) {
 
     if (game) return <></>
     return (
-        <section className='h-3/4 w-96 border-2 border-gray-300 drop-shadow-lg text-white md:absolute left-10 flex items-center flex-col rounded-sm rounded-tl-none shadow ' >
-            <h1 className='text-lg font-semibold py-2 border-b-2 border-gray-300 w-full text-center ' >Info</h1>
+        <section className='glasBackground h-3/4 w-96 border-2 border-gray-300 drop-shadow-lg text-white md:absolute left-10 flex items-center flex-col rounded-sm rounded-tl-none shadow ' >
+            <h1 className='text-lg font-semibold py-2 w-full text-center ' >Info</h1>
 
             <div className='grow w-full flex flex-col items-center overflow-y-auto px-6 pt-4 gap-6 ' >
                 <div className="flex items-center justify-between w-full " >
