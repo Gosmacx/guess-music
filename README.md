@@ -3,6 +3,8 @@
 **Live:** [Website](https://guessmusic.netlify.app/)
 
 Music prediction app that generates random quizzes using Spotify lists 🔥.
+<br>
+Just give the spotify link and the app will generate hundreds of unique questions for you 🙂.
 
 ## Used Technologies 👨‍💻
 `Typescript`, `React`, `Express`, `Spotify API`
